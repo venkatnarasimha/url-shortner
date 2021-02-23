@@ -1,0 +1,33 @@
+1.get all URLS
+    api/shorty
+    response:
+        body:{
+            id:
+            long_url:
+        }
+
+    status: 200(ok)
+
+2.post URL & get short URLS
+    request:
+        body:{
+            long_url:
+        }
+    
+    response:
+        body:{
+            id:
+        }
+
+    status: 201 (created)
+
+
+
+3.get long URLs with short URLs ids
+    response :
+        body: {
+            id:
+            long_url:
+        }
+    status: 200(ok), 404(not found)==>if wrong id is given
+
