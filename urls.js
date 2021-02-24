@@ -24,10 +24,10 @@ router.get('/', (req, res) => {
 
 router.post('/', (req, res) => {
     const longUrl = req.body.long_url;
-    console.log("URLLIST: ", longUrl);
     const id = shortId.generate();
 
     urls[id] = longUrl;
+    console.log('URLLIST: ', urls);
     res.status(201).send({ id });
 });
 

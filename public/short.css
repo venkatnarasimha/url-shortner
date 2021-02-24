@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nonwrapper {
+  min-height: calc(100vh - 500px);
+}
+
+.main-area {
+  display: flex;
+  background-color: rgb(2, 2, 58);
+  padding-top: 20px;
+  min-height: 200px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 75%;
+}
+
+.text {
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 75%;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.buttons {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.but {
+  background-color: blue;
+  border: none;
+  color: whitesmoke;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  cursor: pointer;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.but:hover {
+  opacity: 1;
+}
+
+.non-link-area {
+  display: grid;
+  grid-template-columns: 600px 100px;
+  grid-column-gap: 2px;
+  grid-row-gap: 23px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.longurl {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.shorturl {
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* table,
+tr,
+td {
+  border: 1px white;
+} */
+
+/* .output {
+  display: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 75%;
+  margin-left: 10px;
+} */
+
+.non-footer {
+  min-height: calc(100vh - 50px);
+}
+
+.footer {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  background-color: #333;
+  line-height: 50px;
+}

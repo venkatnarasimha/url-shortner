@@ -8,9 +8,7 @@ const api = require('./api');
 app.use(express.json());
 app.use('/api', api);
 
-app.get('/', (req, res) => {
-    res.send('helloworld');
-});
+app.use(express.static('public'));
 
 app.listen(port, () => {
     console.log(`Service Started @${port}`);
