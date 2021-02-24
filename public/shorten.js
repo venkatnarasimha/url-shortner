@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-console */
 const inputValue = document.querySelector('.input');
 const outputValue = document.querySelector('.output');
@@ -6,7 +7,7 @@ const but = document.querySelector('.shortens');
 const mylist = document.querySelector('.myurl');
 const short = document.querySelector('.shorturl');
 function logic() {
-    fetch('http://localhost:3000/api/urls', {
+    fetch('./api/urls', {
         method: 'POST',
         headers: {
             'Content-type': 'application/json; charset=UTF-8',
@@ -22,7 +23,7 @@ function logic() {
 }
 
 function displayURLS() {
-    fetch('http://localhost:3000/api/urls')
+    fetch('./api/urls')
         .then((response) => response.json())
         .then((urls) => {
             urls.forEach((element) => {
@@ -44,10 +45,10 @@ function displayURLS() {
 but.addEventListener('click', () => {
     console.log('clicked');
     logic();
-    //displayURLS();
+    // displayURLS();
 });
 
-mylist.addEventListener('click', ()=>{
+mylist.addEventListener('click', () => {
     displayURLS();
 });
 
