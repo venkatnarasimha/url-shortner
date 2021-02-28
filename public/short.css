@@ -127,7 +127,7 @@ td {
 } */
 
 .non-footer {
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - 25px);
 }
 
 .footer {
@@ -135,5 +135,21 @@ td {
   color: white;
   text-align: center;
   background-color: #333;
-  line-height: 50px;
+  line-height: 25px;
+}
+
+.myurls {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: left;
+  background-color: #333;
+  color: white;
+  padding-left: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: 15px;
+  width: 95%;
 }

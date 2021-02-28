@@ -19,12 +19,12 @@
 }
 
 .wrapper {
-  display: inline-flex;
+  display: flex;
   flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: left;
   text-align: left;
-  align-items: center;
+  align-items: left;
   gap: 50px;
   font-size: 18px;
   margin-top: 25px;
