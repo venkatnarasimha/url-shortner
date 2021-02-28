@@ -4,7 +4,9 @@ const express = require('express');
 const router = express.Router();
 const shortId = require('shortid');
 
-const urls = {};
+const { urls } = require('./urldata');
+
+// const urls = {};
 
 // get all URLS_List
 
@@ -12,6 +14,7 @@ router.get('/', (req, res) => {
     const urlList = [];
 
     Object.keys(urls).forEach((url) => {
+        // console.log(url);
         urlList.push({
             id: url,
             long_url: urls[url],
